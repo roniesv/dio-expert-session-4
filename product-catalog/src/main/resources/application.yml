@@ -1,9 +1,12 @@
-#spring:
-#  application:
-#    name: product-catalog
-#
-#  cloud:
-#    config:
-#      uri: https://localhost:8888
-server:
-  port: 8081
+#nome para buscar a config padrao remota
+spring:
+  application:
+    name: product-catalog
+#para pegar do config server
+  cloud:
+    config:
+      uri: https://localhost:8888
+
+#server:
+#  port: 8081
+#essa era configuracao local para uma porta
